@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the current release version of Audacity via the project website. The downloads redirect to a fosshub.com download page, which is also searched for a download link. Permission has been received for SD38 to automate the download.</string>
 	<key>Identifier</key>
-	<string>com.github.killer23d.jss.audacity</string>
+	<string>com.github.killer23d.jss.Audacity</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
