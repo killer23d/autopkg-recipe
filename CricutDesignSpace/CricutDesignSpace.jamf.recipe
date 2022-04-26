@@ -64,6 +64,8 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
+                <key>pkg_category</key>
+                <string>%CATEGORY%</string>
 				<key>computergroup_name</key>
 				<string>%GROUP_NAME%</string>
 				<key>computergroup_template</key>
@@ -84,6 +86,13 @@
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
+        <dict>
+			<key>Arguments</key>
+			<dict>
+				<key>replace_policy</key>
+				<string>True</string>
+			</dict>
 		</dict>
 	</array>
 </dict>
