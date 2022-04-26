@@ -49,6 +49,8 @@
 			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
 		</dict>
 		<dict>
+                <key>pkg_category</key>
+                <string>%CATEGORY%</string>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
@@ -64,8 +66,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-                <key>pkg_category</key>
-                <string>%CATEGORY%</string>
 				<key>computergroup_name</key>
 				<string>%GROUP_NAME%</string>
 				<key>computergroup_template</key>
