@@ -13,7 +13,7 @@
 		<key>GROUP_NAME</key>
 		<string>%NAME%-update-smart</string>
 		<key>GROUP_TEMPLATE</key>
-		<string>JamfSmartGroupTemplate.xml</string>
+		<string>SmartGroupTemplate-update-smart.xml</string>
 		<key>NAME</key>
 		<string>CricutDesignSpace</string>
 		<key>POLICY_CATEGORY</key>
@@ -21,7 +21,7 @@
 		<key>POLICY_NAME</key>
 		<string>Install Latest %NAME%</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>JamfPolicyTemplate.xml</string>
+		<string>PolicyTemplate-install-latest.xml</string>
 		<key>SELF_SERVICE_DESCRIPTION</key>
 		<string>Cricut Design Space is the web-based program that let you browse pages and pages of predesigned projects as well as design your own projects on your desktop.</string>
 		<key>SELF_SERVICE_DISPLAY_NAME</key>
