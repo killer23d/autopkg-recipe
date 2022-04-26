@@ -83,16 +83,11 @@
 				<string>%POLICY_NAME%</string>
 				<key>policy_template</key>
 				<string>%POLICY_TEMPLATE%</string>
+                <key>replace_policy</key>
+				<string>True</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
-		</dict>
-        <dict>
-			<key>Arguments</key>
-			<dict>
-				<key>replace_policy</key>
-				<string>True</string>
-			</dict>
 		</dict>
 	</array>
 </dict>
