@@ -21,7 +21,7 @@
                 <key>app_path</key>
                 <string>%RECIPE_CACHE_DIR%/app/Dremel3DSlicer-%version%-mac/Dremel DigiLab 3D Slicer.app</string>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR%/DremelDigiLab3DSlicer-%version%.pkg
+                <string>%RECIPE_CACHE_DIR%/DremelDigiLab3DSlicer-%version%.pkg</string>
             </dict>
             <key>Processor</key>
             <string>AppPkgCreator</string>
