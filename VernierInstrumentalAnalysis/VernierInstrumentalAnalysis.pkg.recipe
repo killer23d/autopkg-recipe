@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current release of Vernier's Instrumental Analysis and create a versioned package.</string>
     <key>Identifier</key>
-    <string>com.github.killer23d.pkg.VernierGraphicalAnalysis</string>
+    <string>com.github.killer23d.pkg.VernierInstrumentalAnalysis</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
