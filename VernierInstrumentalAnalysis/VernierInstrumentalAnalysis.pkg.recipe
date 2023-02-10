@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>1.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.killer23d.download.VernierGraphicalAnalysis</string>
+    <string>com.github.killer23d.download.VernierInstrumentalAnalysis</string>
     <key>Process</key>
     <array>
         <dict>
