@@ -2,65 +2,71 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Description</key>
+	<string>Downloads the latest version of the DisplayLink Manager App.</string>
 	<key>Identifier</key>
-	<string>local.pkg.DisplayLink</string>
+	<string>com.github.beatlemike.pkg.DisplayLink</string>
 	<key>Input</key>
 	<dict>
-		<key>BASE_URL</key>
-		<string>https://www.synaptics.com</string>
 		<key>DOWNLOAD_URL</key>
 		<string>https://www.displaylink.com/downloads</string>
 		<key>NAME</key>
 		<string>DisplayLink Manager</string>
-		<key>SEARCH_URL</key>
-		<string>products/displaylink-graphics/downloads/macos</string>
-		<key>SOFTWARE_TITLE</key>
-		<string>DisplayLink_Manager</string>
 	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.beatlemike.pkg.DisplayLink</string>
-	<key>ParentRecipeTrustInfo</key>
-	<dict>
-		<key>non_core_processors</key>
+	<string>com.github.beatlemike.download.DisplayLink</string>
+	<key>Process</key>
+	<array>
 		<dict>
-			<key>com.github.nmcspadden.shared/PackageInfoVersioner</key>
+			<key>Arguments</key>
 			<dict>
-				<key>path</key>
-				<string></string>
-				<key>sha256_hash</key>
-				<string>PROCESSOR FILEPATH NOT FOUND</string>
+				<key>destination_path</key>
+				<string>%RECIPE_CACHE_DIR%/unpack</string>
+				<key>flat_pkg_path</key>
+				<string>%pathname%</string>
+				<key>skip_payload</key>
+				<true/>
 			</dict>
-			<key>com.github.homebysix.VersionSplitter/VersionSplitter</key>
-			<dict>
-				<key>git_hash</key>
-				<string>dc086969ec741e70edcf24774d50fba627732496</string>
-				<key>path</key>
-				<string>/Users/Shared/AutoPkg/Repos/com.github.autopkg.homebysix-recipes/VersionSplitter/VersionSplitter.py</string>
-				<key>sha256_hash</key>
-				<string>121f98262a70e62f58e81f16de00f69785b5aed765ed43961319759757e2d55c</string>
-			</dict>
+			<key>Processor</key>
+			<string>FlatPkgUnpacker</string>
 		</dict>
-		<key>parent_recipes</key>
 		<dict>
-			<key>com.github.beatlemike.download.DisplayLink</key>
+			<key>Arguments</key>
 			<dict>
-				<key>git_hash</key>
-				<string>63c4d34ea26b2a206105b9da0bd6683eafd60bf8</string>
-				<key>path</key>
-				<string>/Users/Shared/AutoPkg/Repos/com.github.beatlemike.autopkg-recipes/DisplayLink.download.recipe</string>
-				<key>sha256_hash</key>
-				<string>d39f30a2ce2a876155cc82c2348a64c584806cb479841718f8c995c3ebe8422a</string>
+				<key>package_info_path</key>
+				<string>%RECIPE_CACHE_DIR%/unpack/DisplayLinkManagerApp.pkg/PackageInfo</string>
 			</dict>
-			<key>com.github.beatlemike.pkg.DisplayLink</key>
-			<dict>
-				<key>git_hash</key>
-				<string>800cf0ae0f8c00ddcdf77ad2c3f4ff4261984413</string>
-				<key>path</key>
-				<string>/Users/Shared/AutoPkg/Repos/com.github.beatlemike.autopkg-recipes/DisplayLink.pkg.recipe</string>
-				<key>sha256_hash</key>
-				<string>f90d25fd88079e4fff7e14c5b222c6a2b45f812cec5bc349753dbac1bb032622</string>
-			</dict>
+			<key>Processor</key>
+			<string>com.github.nmcspadden.shared/PackageInfoVersioner</string>
 		</dict>
-	</dict>
+		<dict>
+			<key>Processor</key>
+			<string>com.github.homebysix.VersionSplitter/VersionSplitter</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%SOFTWARE_TITLE%-%version%.pkg</string>
+				<key>source_pkg</key>
+				<string>%pathname%</string>
+			</dict>
+			<key>Processor</key>
+			<string>PkgCopier</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>path_list</key>
+				<array>
+					<string>%RECIPE_CACHE_DIR%/unpack</string>
+				</array>
+			</dict>
+			<key>Processor</key>
+			<string>PathDeleter</string>
+		</dict>
+	</array>
 </dict>
 </plist>
