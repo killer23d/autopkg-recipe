@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>local.pkg.DisplayLink</string>
+	<key>Input</key>
+	<dict>
+		<key>BASE_URL</key>
+		<string>https://www.synaptics.com</string>
+		<key>DOWNLOAD_URL</key>
+		<string>https://www.displaylink.com/downloads</string>
+		<key>NAME</key>
+		<string>DisplayLink Manager</string>
+		<key>SEARCH_URL</key>
+		<string>products/displaylink-graphics/downloads/macos</string>
+		<key>SOFTWARE_TITLE</key>
+		<string>DisplayLink_Manager</string>
+	</dict>
+	<key>ParentRecipe</key>
+	<string>com.github.beatlemike.pkg.DisplayLink</string>
+	<key>ParentRecipeTrustInfo</key>
+	<dict>
+		<key>non_core_processors</key>
+		<dict>
+			<key>com.github.nmcspadden.shared/PackageInfoVersioner</key>
+			<dict>
+				<key>path</key>
+				<string></string>
+				<key>sha256_hash</key>
+				<string>PROCESSOR FILEPATH NOT FOUND</string>
+			</dict>
+			<key>com.github.homebysix.VersionSplitter/VersionSplitter</key>
+			<dict>
+				<key>git_hash</key>
+				<string>dc086969ec741e70edcf24774d50fba627732496</string>
+				<key>path</key>
+				<string>/Users/Shared/AutoPkg/Repos/com.github.autopkg.homebysix-recipes/VersionSplitter/VersionSplitter.py</string>
+				<key>sha256_hash</key>
+				<string>121f98262a70e62f58e81f16de00f69785b5aed765ed43961319759757e2d55c</string>
+			</dict>
+		</dict>
+		<key>parent_recipes</key>
+		<dict>
+			<key>com.github.beatlemike.download.DisplayLink</key>
+			<dict>
+				<key>git_hash</key>
+				<string>63c4d34ea26b2a206105b9da0bd6683eafd60bf8</string>
+				<key>path</key>
+				<string>/Users/Shared/AutoPkg/Repos/com.github.beatlemike.autopkg-recipes/DisplayLink.download.recipe</string>
+				<key>sha256_hash</key>
+				<string>d39f30a2ce2a876155cc82c2348a64c584806cb479841718f8c995c3ebe8422a</string>
+			</dict>
+			<key>com.github.beatlemike.pkg.DisplayLink</key>
+			<dict>
+				<key>git_hash</key>
+				<string>800cf0ae0f8c00ddcdf77ad2c3f4ff4261984413</string>
+				<key>path</key>
+				<string>/Users/Shared/AutoPkg/Repos/com.github.beatlemike.autopkg-recipes/DisplayLink.pkg.recipe</string>
+				<key>sha256_hash</key>
+				<string>f90d25fd88079e4fff7e14c5b222c6a2b45f812cec5bc349753dbac1bb032622</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
