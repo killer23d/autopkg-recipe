@@ -17,6 +17,11 @@
                 <name>%GROUP_NAME%</name>
             </computer_group>
         </computer_groups>
+        <departments>
+                <department>
+                    <name>%DEPARTMENT_NAME%</name>
+                </department>
+            </departments>
         <exclusions/>
     </scope>
     <!-- Packages -->
@@ -43,11 +48,12 @@
     </self_service>
     <!-- Maintenance e.g. recon -->
     <maintenance/>
+        <recon>true</recon>
     <!-- Files and processes e.g. run command -->
     <files_processes/>
     <!-- User interaction e.g. start and finish messages -->
     <user_interaction>
         <message_start/>
-        <message_finish/>
+        <message_finish>Please restart the computer to finish the installation!</message_finish>
     </user_interaction>
 </policy>
