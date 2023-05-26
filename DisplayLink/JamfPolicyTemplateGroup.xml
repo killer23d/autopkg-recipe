@@ -37,6 +37,7 @@
     <!-- Scripts -->
     <override_default_settings>
                <distribution_point>%DP%</distribution_point>
+    </override_default_settings>
     <scripts>
         <size>0</size>
     </scripts>
