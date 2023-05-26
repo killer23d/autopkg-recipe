@@ -35,6 +35,8 @@
         </packages>
     </package_configuration>
     <!-- Scripts -->
+    <override_default_settings>
+               <distribution_point>%DP%</distribution_point>
     <scripts>
         <size>0</size>
     </scripts>
@@ -47,8 +49,9 @@
         <self_service_description>%SELF_SERVICE_DESCRIPTION%</self_service_description>
     </self_service>
     <!-- Maintenance e.g. recon -->
-    <maintenance/>
+    <maintenance>
         <recon>true</recon>
+    </maintenance>
     <!-- Files and processes e.g. run command -->
     <files_processes/>
     <!-- User interaction e.g. start and finish messages -->
