@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of GIMP, creates PKG, uploads it to the JSS and creates SelfService Policy.</string>
 	<key>Identifier</key>
-	<string>com.github.killer23d.jamf.GIMP-arm64</string>
+	<string>com.github.killer23d.jss.GIMP-arm64</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -57,7 +57,7 @@
 				<string>%SELF_SERVICE_ICON%</string>
 			</dict>
 			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+			<string>JSSImporter</string>
 		</dict>
 	</array>
 </dict>
