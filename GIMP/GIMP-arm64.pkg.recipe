@@ -86,7 +86,7 @@
 					<string>%RECIPE_CACHE_DIR%</string>
 				</dict>
 				<key>pkgname</key>
-				<string>%NAME%-%version%</string>
+				<string>%NAME%-arm64-%version%</string>
 			</dict>
 			<key>Processor</key>
 			<string>PkgCreator</string>
